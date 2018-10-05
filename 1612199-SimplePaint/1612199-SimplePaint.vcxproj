@@ -148,6 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="1612199-SimplePaint.h" />
+    <ClInclude Include="CCircle.h" />
+    <ClInclude Include="CEllipse.h" />
     <ClInclude Include="CLine.h" />
     <ClInclude Include="CPoint.h" />
     <ClInclude Include="CRectangle.h" />

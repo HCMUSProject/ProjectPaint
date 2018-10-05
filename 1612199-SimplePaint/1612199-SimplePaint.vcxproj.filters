@@ -42,6 +42,12 @@
     <ClInclude Include="CRectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CEllipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
