@@ -173,6 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="1612199-SimplePaint.ico" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="bitmap2.bmp" />
+    <Image Include="download.bmp" />
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
