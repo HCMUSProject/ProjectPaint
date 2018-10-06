@@ -154,6 +154,7 @@
     <ClInclude Include="CPoint.h" />
     <ClInclude Include="CRectangle.h" />
     <ClInclude Include="CShape.h" />
+    <ClInclude Include="CSquare.h" />
     <ClInclude Include="CStyle.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />

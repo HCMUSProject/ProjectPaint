@@ -5,8 +5,6 @@ class CLine : public CShape
 public:
 	CLine(){}
 	CLine(CPoint p1, CPoint p2) {
-		/*m_PointStart = p1;
-		m_PointEnd = p2;*/
 		m_PointStart.SetX(p1.GetX());
 		m_PointStart.SetY(p1.GetY());
 		m_PointEnd.SetX(p2.GetX());
