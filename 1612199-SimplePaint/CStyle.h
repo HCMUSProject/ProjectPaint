@@ -11,7 +11,7 @@ public:
 	{
 		_iStyle = PS_SOLID;
 		_iWidth = 1;
-		_color = RGB(0, 0, 0);
+		_color = RGB(255, 0, 0);
 		_hPen = CreatePen(_iStyle, _iWidth, _color);
 		_bgColor = COLOR_WINDOW + 1;
 	}

@@ -12,5 +12,15 @@ public:
 	void SetY(int y) { m_y = y; }
 	int GetX() { return m_x; }
 	int GetY(){ return m_y; }
+
+	CPoint& operator=(const CPoint& cp)
+	{
+		if (&cp != this)
+		{
+			this->m_x = cp.m_x;
+			this->m_y = cp.m_y;
+		}
+		return *this;
+	}
 };
 

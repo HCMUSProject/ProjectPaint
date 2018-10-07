@@ -7,21 +7,35 @@ protected:
 	CPoint m_PointStart;
 	CPoint m_PointEnd;
 	CStyle* m_Style;
-
 	
 public:
 	CShape(){}
-	~CShape() { delete m_Style; }
+	CShape(const CShape &cs)
+	{
+		// BUG BUG BUG BUG BUG BUG BUG BUG BUG BUG BUG BUGBUG BUG BUG BUG BUG BUG
+		this->m_PointStart = cs.m_PointStart;
+		this->m_PointEnd = cs.m_PointEnd;
+		if (this->m_Style!=NULL)
+			delete this->m_Style;
+		this->m_Style = new CStyle(*cs.m_Style);
+
+	}
+	virtual ~CShape()
+	{ 
+		if (this->m_Style != NULL)
+		{
+			delete m_Style;
+			m_Style = NULL;
+		}
+	}
 
 	virtual void SetPointStart(CPoint P)
 	{
-		m_PointStart.SetX(P.GetX());
-		m_PointStart.SetY(P.GetY());
+		m_PointStart = P;
 	}
 	virtual void SetPointEnd(CPoint P)
 	{
-		m_PointEnd.SetX(P.GetX());
-		m_PointEnd.SetY(P.GetY());
+		m_PointEnd = P;
 	}
 	virtual void SetStyle(CStyle st)
 	{
