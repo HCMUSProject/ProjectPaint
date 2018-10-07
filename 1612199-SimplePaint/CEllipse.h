@@ -16,7 +16,7 @@ public:
 			delete this->m_Style;
 		this->m_Style = new CStyle(*cs.m_Style);
 	}
-	~CEllipse() {
+	virtual ~CEllipse() {
 		if (this->m_Style != NULL)
 		{
 			delete m_Style;

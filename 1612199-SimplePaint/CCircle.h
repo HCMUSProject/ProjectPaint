@@ -25,6 +25,20 @@ public:
 			m_Style = NULL;
 		}
 	}
+
+	void Draw(HDC hdc)
+	{
+		m_PointEnd.SetX(m_PointEnd.GetY() - m_PointStart.GetY() + m_PointStart.GetX());
+		m_PointEnd.SetY(m_PointEnd.GetY());
+
+		m_Style->SetHDCPen(hdc);
+		if (!(m_PointStart.GetX() == m_PointEnd.GetX() && m_PointStart.GetY() == m_PointEnd.GetY()))
+		{
+			SelectObject(hdc, (HBRUSH)m_Style->GetBackgroundColor());
+
+			Ellipse(hdc, m_PointStart.GetX(), m_PointStart.GetY(), m_PointEnd.GetX(), m_PointEnd.GetY());
+		}
+	}
 	virtual CShape* Clone() { return new CCircle(*this); }
 };
 

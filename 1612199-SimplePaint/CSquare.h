@@ -26,6 +26,20 @@ public:
 			m_Style = NULL;
 		}
 	}
+
+	void Draw(HDC hdc)
+	{
+		m_PointEnd.SetX(m_PointEnd.GetY() - m_PointStart.GetY() + m_PointStart.GetX());
+		m_PointEnd.SetY(m_PointEnd.GetY());
+
+		m_Style->SetHDCPen(hdc);
+		if (!(m_PointStart.GetX() == m_PointEnd.GetX() && m_PointStart.GetY() == m_PointEnd.GetY()))
+		{
+			SelectObject(hdc, (HBRUSH)m_Style->GetBackgroundColor());
+
+			Rectangle(hdc, m_PointStart.GetX(), m_PointStart.GetY(), m_PointEnd.GetX(), m_PointEnd.GetY());
+		}
+	}
 	
 	CShape* Clone() { return new CSquare(*this); }
 };

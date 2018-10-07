@@ -16,14 +16,14 @@ public:
 			delete this->m_Style;
 		this->m_Style = new CStyle(*cs.m_Style);
 	}
-	~CRectangle() {
+	virtual ~CRectangle() {
 		if (this->m_Style != NULL)
 		{
 			delete m_Style;
 			m_Style = NULL;
 		}
 	}
-	void Draw(HDC hdc)
+	virtual void Draw(HDC hdc)
 	{
 		m_Style->SetHDCPen(hdc);
 		if (!(m_PointStart.GetX() == m_PointEnd.GetX() && m_PointStart.GetY() == m_PointEnd.GetY()))

@@ -6,7 +6,7 @@ class CShape
 protected:
 	CPoint m_PointStart;
 	CPoint m_PointEnd;
-	CStyle* m_Style;
+	CStyle* m_Style = NULL;
 	
 public:
 	CShape(){}

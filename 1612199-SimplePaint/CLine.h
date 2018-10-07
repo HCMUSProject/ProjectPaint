@@ -23,7 +23,7 @@ public:
 			m_Style = NULL;
 		}
 	}
-	void Draw(HDC hdc)
+	virtual void Draw(HDC hdc)
 	{
 		m_Style->SetHDCPen(hdc);
 		if (!(m_PointStart.GetX() == m_PointEnd.GetX() && m_PointStart.GetY() == m_PointEnd.GetY()))
