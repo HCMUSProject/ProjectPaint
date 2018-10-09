@@ -51,6 +51,9 @@
     <ClInclude Include="CSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CDot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -70,12 +73,6 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="1612199-SimplePaint.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap1.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="bitmap2.bmp">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="download.bmp">

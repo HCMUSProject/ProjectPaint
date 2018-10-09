@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="1612199-SimplePaint.h" />
     <ClInclude Include="CCircle.h" />
+    <ClInclude Include="CDot.h" />
     <ClInclude Include="CEllipse.h" />
     <ClInclude Include="CLine.h" />
     <ClInclude Include="CPoint.h" />
@@ -174,8 +175,6 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="1612199-SimplePaint.ico" />
-    <Image Include="bitmap1.bmp" />
-    <Image Include="bitmap2.bmp" />
     <Image Include="download.bmp" />
     <Image Include="small.ico" />
   </ItemGroup>

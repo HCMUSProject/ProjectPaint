@@ -1,4 +1,5 @@
 #pragma once
+#include <windowsx.h>
 #include "CPoint.h"
 #include "CStyle.h"
 class CShape
