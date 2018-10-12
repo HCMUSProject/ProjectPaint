@@ -22,5 +22,18 @@ public:
 		}
 		return *this;
 	}
+	bool operator ==(const CPoint& cp)
+	{
+		if (this->m_x == cp.m_x && this->m_y == cp.m_y)
+			return true;
+		return false;
+	}
+
+	bool operator !=(const CPoint& cp)
+	{
+		if (!(this->m_x == cp.m_x && this->m_y == cp.m_y))
+			return true;
+		return false;
+	}
 };
 

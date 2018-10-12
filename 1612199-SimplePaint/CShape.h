@@ -10,7 +10,11 @@ protected:
 	CStyle* m_Style = NULL;
 	
 public:
-	CShape(){}
+	CShape()
+	{
+		this->m_PointStart = CPoint(-1, -1);
+		this->m_PointEnd = CPoint(-1, -1);
+	}
 	CShape(const CShape &cs)
 	{
 		// BUG BUG BUG BUG BUG BUG BUG BUG BUG BUG BUG BUGBUG BUG BUG BUG BUG BUG

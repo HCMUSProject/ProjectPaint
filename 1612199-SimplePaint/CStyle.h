@@ -9,7 +9,7 @@ class CStyle
 public:
 	CStyle()
 	{
-		_iStyle = PS_SOLID;
+		_iStyle = PS_DASH;
 		_iWidth = 1;
 		_color = RGB(0, 0, 0);
 		_hPen = CreatePen(_iStyle, _iWidth, _color);
@@ -25,11 +25,14 @@ public:
 	}
 	CStyle(const CStyle &st)
 	{
-		_iStyle = st._iStyle;
-		_iWidth = st._iWidth;
-		_color = st._color;
-		_bgColor = st._bgColor;
-		_hPen = CreatePen(_iStyle, _iWidth, _color);
+		if (&st != NULL)
+		{
+			_iStyle = st._iStyle;
+			_iWidth = st._iWidth;
+			_color = st._color;
+			_bgColor = st._bgColor;
+			_hPen = CreatePen(_iStyle, _iWidth, _color);
+		}
 	}
 	~CStyle(){}
 	void SetStyle(int iStyle)
