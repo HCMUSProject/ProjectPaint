@@ -9,7 +9,7 @@ class CStyle
 public:
 	CStyle()
 	{
-		_iStyle = PS_DASH;
+		_iStyle = PS_SOLID;
 		_iWidth = 1;
 		_color = RGB(0, 0, 0);
 		_hPen = CreatePen(_iStyle, _iWidth, _color);
