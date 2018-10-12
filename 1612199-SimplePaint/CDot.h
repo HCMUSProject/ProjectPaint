@@ -5,7 +5,7 @@ class CDot : public CShape
 public:
 	CDot() 
 	{
-		this->m_PointStart = this->m_PointEnd = CPoint(0, 0);
+		
 	}
 	CDot(CPoint p1) {
 		m_PointStart = m_PointEnd = p1;

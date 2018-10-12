@@ -12,8 +12,7 @@ protected:
 public:
 	CShape()
 	{
-		this->m_PointStart = CPoint(-1, -1);
-		this->m_PointEnd = CPoint(-1, -1);
+		
 	}
 	CShape(const CShape &cs)
 	{
