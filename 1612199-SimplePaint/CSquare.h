@@ -35,8 +35,8 @@ public:
 		m_Style->SetHDCPen(hdc);
 		if (!(m_PointStart.GetX() == m_PointEnd.GetX() && m_PointStart.GetY() == m_PointEnd.GetY()))
 		{
-			SelectObject(hdc, (HBRUSH)m_Style->GetBackgroundColor());
-
+			//background transparent
+			SelectObject(hdc, GetStockObject(NULL_BRUSH));
 			Rectangle(hdc, m_PointStart.GetX(), m_PointStart.GetY(), m_PointEnd.GetX(), m_PointEnd.GetY());
 		}
 	}

@@ -28,7 +28,6 @@ public:
 	virtual void Draw(HDC hdc)
 	{
 		m_Style->SetHDCPen(hdc);
-		SelectObject(hdc, (HBRUSH)m_Style->GetBackgroundColor());
 		SetPixel(hdc, this->m_PointStart.GetX(), this->m_PointStart.GetY(), this->m_Style->GetColor());
 	}
 	CShape* Clone() { return new CDot(*this); }
